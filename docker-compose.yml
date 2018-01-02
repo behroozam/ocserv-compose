@@ -4,10 +4,10 @@ services:
     build: ocserv/
     ports:
       - '8585:8585'
-  volumes:
-    - './conf:/etc/ocserv/'
-  networks:
-    - vpn-network
+    volumes:
+      - './conf:/etc/ocserv/'
+    networks:
+      - vpn-network
 networks:
   vpn-network:
     driver: bridge
